@@ -1,0 +1,4 @@
+<view>
+  <view>now num is {{num}}</view>
+  <button size="default" type="primary" onTap="plusOne">click me plus 1</button>
+</view>

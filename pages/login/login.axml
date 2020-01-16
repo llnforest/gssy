@@ -1,0 +1,15 @@
+<view>
+  <view class="input-area">
+    <form onSubmit="formSubmit" report-submit="true">
+    <input name="phone" onFocus="focusInput" onBlur="blurInput" data-type="1" type="number" maxlength="11" placeholder="手机号码" class="input-item" style="{{focusPhone?'border-bottom:1px solid #16a7e0;':''}}" focus="{{focusPhone}}"/>
+    <input name="code" onFocus="focusInput" onBlur="blurInput" data-type="2" type="number" maxlength="4" placeholder="验证码" class="input-item input-item-short"  style="{{focusCode?'border-bottom:1px solid #16a7e0;':''}}" focus="{{focusCode}}"/>
+    <button a:if="{{!active}}" size="mini" type="primary" class="btn-code" onTap="getCode">获取验证码</button>
+    <button a:else size="mini" type="primary" class="btn-code active"><text>{{sec}}</text>s后重新获取</button>
+
+    <button size="default" type="primary" class="btn-submit btn-login" form-type="submit">立即绑定</button>
+    <button size="default" class="btn-submit btn-phone-login" open-type="getAuthorize" 
+onGetAuthorize="onGetAuthorize" onError="onAuthError" 
+scope='phoneNumber'>本机一键登录</button>
+    </form>
+  </view>
+</view>

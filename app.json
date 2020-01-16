@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/demo/demo",
+    "pages/todos/todos",
+    "pages/add-todo/add-todo"
+    
+  ],
+  "window": {
+    "defaultTitle": "Todo App",
+    "titleBarColor": "#323239"
+  }
+}

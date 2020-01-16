@@ -1,0 +1,50 @@
+
+.input-area{
+  position:absolute;
+  width:650rpx;
+  top:250rpx;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.input-item{
+  width:100%;
+  border-bottom:1px solid #eee;
+  height:100rpx;
+  line-height:100rpx;
+  margin-bottom:30rpx;
+  padding:0;
+  
+}
+.input-item-short{
+  width:50%;
+}
+
+.btn-code{
+  width:40%;
+  height:100rpx;
+  line-height: 100rpx;
+  margin:0 !important;
+  padding:0;
+  position:absolute;
+  right:0;
+}
+.btn-code.active{
+  background-color:#eeeeee;
+  border-color:#eee;
+  color:#16a7e0;
+}
+
+.btn-submit{
+  height:100rpx;
+  line-height:100rpx;
+  margin-bottom:50rpx;
+}
+
+.btn-login{
+  margin-top:30rpx;
+}
+.btn-phone-login{
+  border-color:#16a7e0;
+  color:#16a7e0;
+}
